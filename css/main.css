@@ -1,0 +1,76 @@
+/* Root Customization*/
+
+:root {
+    --SB_link: #d8323c;
+    --SB_background: #0c0e0c;
+    --SB_text: #eaebea;
+    --F_background: #0c0e0c;
+    --F_text: #eaebea;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+/* Side Nav Customization*/
+
+/* Main Navigation */
+.SideBarClass {
+    height: 100%; /* Full Height */
+    width: 0px; /* Starts at 0, changes when opened */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0; /* Stay at the left */
+    background-color: var(--SB_background);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 30px; /* Place content 30px from the top */
+    transition: 0.5s; /* 0.5s transition effect to slide in the side bar */
+}
+
+/* Navigation menu links */
+.SideBarClass a {
+    padding: 10px 10px 10px 35px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--SB_text);
+    display: block;
+    transition: 0.3s;
+}
+
+/* Change link color on hover */
+.SideBarClass a:hover {
+    color: var(--SB_link);
+}
+
+/* Position the x button */
+.SideBarClass .clsButton {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 35px;
+    margin-left: 50px;
+}
+
+.SBOpenButton {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Media Query for smaller screen size */
+@media screen and (max-height: 450px) {
+    .SideNavClass {padding-top: 8px;}
+    .SideNavClass a {font-size: 18px;}
+}
+
+/* Footer Customization*/
+
+.FooterClass {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--F_background);
+    color: var(--F_text);
+    text-align: center;
+}
